@@ -238,12 +238,12 @@
         el: '#vcomments',
         notify: notify,
         verify: verify,
-        appid: "5KShmbPHuEvzSR2mnmUMLCMA-gzGzoHsz",
-        appkey: "6mM4Hq48Ld3GYzTo9DxQGRIk",
-        placeholder: "说点什么",
-        avatar: "/retro",
+        appid: '5KShmbPHuEvzSR2mnmUMLCMA-gzGzoHsz',
+        appkey: '6mM4Hq48Ld3GYzTo9DxQGRIk',
+        placeholder: '说点什么',
+        avatar: "/retro',
         meta: ['nick', 'mail', 'link'],
-        pageSize: "10",
+        pageSize: '10',
       });
       oldLoad && oldLoad();
     };
@@ -306,6 +306,28 @@
   </div>
 </div>
   
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoad = window.onload;
+  window.onload = function () {
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: "https://music.163.com/playlist?id=6375231&userid=1767196322# 歌曲列表，必须传入下列各参数，其中 url 与 cover 在本地需存于 source 目录，更多参数见文档：https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0"
+    });
+    oldLoad && oldLoad();
+  }
+</script>
 
   
 
@@ -513,6 +535,26 @@
   
 
 
+
+  <script>(function (i, s, o, g, r, a, m) {
+      i['DaoVoiceObject'] = r;
+      i[r] = i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        };
+      i[r].l = 1 * new Date();
+      a = s.createElement(o);
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      a.charset = 'utf-8';
+      m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', ('https:' === document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4a74cc34.js", 'daovoice');
+    daovoice('init', {
+      app_id: "4a74cc34",
+    });
+    daovoice('update');
+  </script>
 
 
 
