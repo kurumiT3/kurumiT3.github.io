@@ -1,113 +1,113 @@
-/**
- * Sets up Justified Gallery.
- */
-if (!!$.prototype.justifiedGallery) {
-  var options = {
-    rowHeight: 140,
-    margins: 4,
-    lastRow: "justify"
-  };
-  $(".article-gallery").justifiedGallery(options);
+function scrollToElement(target, offset) {
+  var scroll_offset = $(target).offset();
+  $('body,html').animate({
+    scrollTop: scroll_offset.top + (offset || 0),
+    easing: 'swing',
+  });
 }
 
-$(document).ready(function() {
+function scrollToBoard() {
+  scrollToElement('#board', -$('#navbar').height());
+}
 
-  /**
-   * Shows the responsive navigation menu on mobile.
-   */
-  $("#header > #nav > ul > .icon").click(function() {
-    $("#header > #nav > ul").toggleClass("responsive");
+// 防抖动函数
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this, args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+$(document).ready(function () {
+  // 顶部菜单的动效
+  var navbar = $('#navbar');
+  if (navbar.offset().top > 0) {
+    navbar.addClass('navbar-custom');
+    navbar.removeClass('navbar-dark');
+  }
+  $(window).scroll(function () {
+    if (navbar.offset().top > 0) {
+      navbar.addClass('navbar-custom');
+      navbar.removeClass('navbar-dark');
+    } else {
+      navbar.addClass('navbar-dark');
+    }
+  });
+  $('#navbar-toggler-btn').on('click', function () {
+    $('.animated-icon').toggleClass('open');
+    $('#navbar').toggleClass('navbar-col-show');
   });
 
-
-  /**
-   * Controls the different versions of  the menu in blog post articles 
-   * for Desktop, tablet and mobile.
-   */
-  if ($(".post").length) {
-    var menu = $("#menu");
-    var nav = $("#menu > #nav");
-    var menuIcon = $("#menu-icon, #menu-icon-tablet");
-
-    /**
-     * Display the menu on hi-res laptops and desktops.
-     */
-    if ($(document).width() >= 1440) {
-      menu.css("visibility", "visible");
-      menuIcon.addClass("active");
+  // 头图视差动画
+  var target = $('#background[parallax="true"]');
+  var parallax = function () {
+    var oVal = $(window).scrollTop() / 5;
+    var offset = parseInt($('#board').css('margin-top'));
+    var max = 96 + offset;
+    if (oVal > max) {
+      oVal = max;
     }
-
-    /**
-     * Display the menu if the menu icon is clicked.
-     */
-    menuIcon.click(function() {
-      if (menu.css("visibility") === "hidden") {
-        menu.css("visibility", "visible");
-        menuIcon.addClass("active");
-      } else {
-        menu.css("visibility", "hidden");
-        menuIcon.removeClass("active");
-      }
-      return false;
+    target.css({
+      transform: 'translate3d(0,' + oVal + 'px,0)',
+      '-webkit-transform': 'translate3d(0,' + oVal + 'px,0)',
+      '-ms-transform': 'translate3d(0,' + oVal + 'px,0)',
+      '-o-transform': 'translate3d(0,' + oVal + 'px,0)',
     });
 
-    /**
-     * Add a scroll listener to the menu to hide/show the navigation links.
-     */
-    if (menu.length) {
-      $(window).on("scroll", function() {
-        var topDistance = menu.offset().top;
-
-        // hide only the navigation links on desktop
-        if (!nav.is(":visible") && topDistance < 50) {
-          nav.show();
-        } else if (nav.is(":visible") && topDistance > 100) {
-          nav.hide();
-        }
-
-        // on tablet, hide the navigation icon as well and show a "scroll to top
-        // icon" instead
-        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {
-          $("#menu-icon-tablet").show();
-          $("#top-icon-tablet").hide();
-        } else if (! $( "#menu-icon" ).is(":visible") && topDistance > 100) {
-          $("#menu-icon-tablet").hide();
-          $("#top-icon-tablet").show();
-        }
+    var toc = $('#toc');
+    if (toc) {
+      $('#toc-ctn').css({
+        'padding-top': `${ oVal }px`,
       });
     }
-
-    /**
-     * Show mobile navigation menu after scrolling upwards,
-     * hide it again after scrolling downwards.
-     */
-    if ($( "#footer-post").length) {
-      var lastScrollTop = 0;
-      $(window).on("scroll", function() {
-        var topDistance = $(window).scrollTop();
-
-        if (topDistance > lastScrollTop){
-          // downscroll -> show menu
-          $("#footer-post").hide();
-        } else {
-          // upscroll -> hide menu
-          $("#footer-post").show();
-        }
-        lastScrollTop = topDistance;
-
-        // close all submenu"s on scroll
-        $("#nav-footer").hide();
-        $("#toc-footer").hide();
-        $("#share-footer").hide();
-
-        // show a "navigation" icon when close to the top of the page, 
-        // otherwise show a "scroll to the top" icon
-        if (topDistance < 50) {
-          $("#actions-footer > #top").hide();
-        } else if (topDistance > 100) {
-          $("#actions-footer > #top").show();
-        }
-      });
-    }
+  };
+  if (target.length > 0) {
+    parallax();
+    $(window).scroll(parallax);
   }
+
+  // 向下滚动箭头的点击
+  $('.scroll-down-bar').on('click', scrollToBoard);
+
+  // 向顶部滚动箭头
+  var topArrow = $('#scroll-top-button');
+  var posDisplay = false;
+  var scrollDisplay = false;
+  // 位置
+  var setTopArrowPos = function () {
+    var boardRight = document.getElementById('board').getClientRects()[0].right;
+    var bodyWidth = document.body.offsetWidth;
+    var right = bodyWidth - boardRight;
+    posDisplay = right >= 50;
+    topArrow.css({
+      'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
+      'right': right - 64 + 'px',
+    });
+  };
+  setTopArrowPos();
+  $(window).resize(setTopArrowPos);
+  // 显示
+  var headerHeight = $('#board').offset().top;
+  $(window).scroll(debounce(function () {
+    var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
+    scrollDisplay = scrollHeight >= headerHeight;
+    topArrow.css({
+      'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
+    });
+  }, 20));
+  // 点击
+  topArrow.on('click', function () {
+    $('body,html').animate({
+      scrollTop: 0,
+      easing: 'swing',
+    });
+  });
 });
