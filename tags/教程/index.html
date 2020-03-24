@@ -1,417 +1,76 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>标签: 教程 | 逆旅驿站</title><meta name="description" content="万丈光芒也不如一束逆旅光更耀眼"><meta name="author" content="孤独的时间领主,kurumiyout3@gmail.com"><meta name="copyright" content="孤独的时间领主"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="http://q.qlogo.cn/headimg_dl?dst_uin=1817855234&spec=640&img_type=jpg"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="google-site-verification" content="YMaUgHjhsEqQUFBxFAoLll-OAtLg1rUW2QRdR1C2HR8"><meta name="msvalidate.01" content="067652683b41d1793d419b96ecc1a48b"><meta name="baidu-site-verification" content="9A6n8aMUoChFszAi"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="标签: 教程"><meta name="twitter:description" content="万丈光芒也不如一束逆旅光更耀眼"><meta name="twitter:image" content="http://q.qlogo.cn/headimg_dl?dst_uin=1817855234&amp;spec=640&amp;img_type=jpg"><meta property="og:type" content="website"><meta property="og:title" content="标签: 教程"><meta property="og:url" content="https://kurumit3.top/tags/%E6%95%99%E7%A8%8B/"><meta property="og:site_name" content="逆旅驿站"><meta property="og:description" content="万丈光芒也不如一束逆旅光更耀眼"><meta property="og:image" content="http://q.qlogo.cn/headimg_dl?dst_uin=1817855234&amp;spec=640&amp;img_type=jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
 
 
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
 
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/img/favicon.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="万丈光芒也不如一束逆旅光更耀眼">
-  <meta name="author" content="孤独的时间领主">
-  <meta name="keywords" content="">
-  <title>标签 - 教程 - 逆旅驿站</title>
-
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.13.0/css/mdb.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css" />
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
-
-
-
-  <link  rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css" />
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link defer rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-<!-- 自定义样式保持在最底部 -->
-
-
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="逆旅驿站" type="application/atom+xml">
-</head>
-
-
-<body>
-  <header style="height: 80vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>逆旅驿站</strong>&nbsp;</a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">归档</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/categories/">分类</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/tags/">标签</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">关于</a>
-          </li>
-        
-          
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/links/">友链</a>
-          </li>
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
-          <div class="container text-center white-text fadeInUp">
-            <span class="h2" id="subtitle">
-              
-            </span>
-
-            
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-<!--  <p class="h4">共计 2 篇文章</p>-->
-  <hr>
-  
-    
-      
-      <p class="h5">2020</p>
-    
-    <a href="/2020/03/17/MAC%22xxx.app%E5%B7%B2%E6%8D%9F%E5%9D%8F%22%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">MAC&#34;xxx.app已损坏&#34;如何解决？</span>
-      <span style="float: right;">03-17</span>
-    </a>
-  
-    
-    <a href="/2020/03/15/MAC%E4%B8%AD%E7%9A%84SIP%20%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BF%9D%E6%8A%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD%EF%BC%9F/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">MAC中的SIP 系统完整性保护是什么？如何关闭？</span>
-      <span style="float: right;">03-15</span>
-    </a>
-  
-</div>
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-  </main>
-
-  
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
-    </a>
-  
-
-  
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-
-  
-    <!-- APlayer 音乐播放器 -->
-    <div id="aplayer"></div>
-    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
-<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
-<script type="text/javascript">
-  var oldLoad = window.onload;
-  window.onload = function () {
-    new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      autoplay: 'false' === 'true',
-      loop: 'all',
-      order: 'random',
-      theme: '#b7daff',
-      preload: 'none',
-      audio: "https://music.163.com/playlist?id=6375231&userid=1767196322# 歌曲列表，必须传入下列各参数，其中 url 与 cover 在本地需存于 source 目录，更多参数见文档：https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0"
-    });
-    oldLoad && oldLoad();
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
   }
-</script>
-
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="https://kurumit3.top/tags/%E6%95%99%E7%A8%8B/"><link rel="preload" href="http://okds.net/images/2020/03/02/64b1d9dc07575a78c0aca8bff79e03f0.jpg" as="image"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: true,
+  isHome: false,
+  isPost: false
   
-
-  
-
-  <footer class="mt-5">
-  <div class="text-center py-3">
-    <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
-    </div>
-    
-
-    
-
-    
-  </div>
-</footer>
-
-<!-- SCRIPTS -->
-<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
-<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
-<script  src="/js/main.js" ></script>
-
-
-  <script  src="/js/lazyload.js" ></script>
-
-
-
-
-
-  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="/js/clipboard-use.js" ></script>
-
-
-
-
-
-
-
-
-<!-- Plugins -->
-
-
-  
-
-  
-    <!-- Google Analytics -->
-    <script defer>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-      ga('create', 'UA-161594563-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  
-
-  
-
-  
-
-  
-
-
-
-  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  linenums');
-      prettyPrint();
-    })
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
-  <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "标签 - 教程&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
-  </script>
-
-
-
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
-
-
-
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    var path = "/local-search.xml";
-    var inputArea = document.querySelector("#local-search-input");
-    inputArea.onclick = function () {
-      getSearchFile(path);
-      this.onclick = null
-    }
-  </script>
-
-
-
-  <script defer src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
-      function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      }
-    );
-  </script>
-
-
-
-
-
-  
-  
-
-
-
-  <script>(function (i, s, o, g, r, a, m) {
-      i['DaoVoiceObject'] = r;
-      i[r] = i[r] ||
-        function () {
-          (i[r].q = i[r].q || []).push(arguments);
-        };
-      i[r].l = 1 * new Date();
-      a = s.createElement(o);
-      m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      a.charset = 'utf-8';
-      m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', ('https:' === document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4a74cc34.js", 'daovoice');
-    daovoice('init', {
-      app_id: "4a74cc34",
-    });
-    daovoice('update');
-  </script>
-
-
-
-
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-</html>
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="逆旅驿站" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">逆旅驿站</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="http://q.qlogo.cn/headimg_dl?dst_uin=1817855234&amp;spec=640&amp;img_type=jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></div></div><div id="body-wrap"><nav class="not_index_bg" id="nav" style="background-image: url(http://okds.net/images/2020/03/02/64b1d9dc07575a78c0aca8bff79e03f0.jpg)"><div id="page_site-info"><div id="site-title"><span class="blogtitle">教程</span></div></div></nav><main id="content-outer"><div class="layout_page" id="content-inner"><div id="tag"><div class="article-sort-title">标签 - 教程</div><div class="article-sort"><div class="article-sort-item year">2020</div><div class="article-sort-item"><div class="article-sort-img"><a class="article-sort-item__img" href="/2020/03/17/MAC%22xxx.app%E5%B7%B2%E6%8D%9F%E5%9D%8F%22%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F/"><img src="http://okds.net/images/2020/03/17/100c6566549fbc06ae2a86c82a1d9571.jpg" alt="MAC&quot;xxx.app已损坏&quot;如何解决？"></a></div><div class="article-sort-post"><a class="article-sort-item__post" href="/2020/03/17/MAC%22xxx.app%E5%B7%B2%E6%8D%9F%E5%9D%8F%22%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F/"><i class="fa fa-clock-o" aria-hidden="true"></i><time class="article-sort-item__time">2020-03-17</time><div class="article-sort-item__title">MAC&quot;xxx.app已损坏&quot;如何解决？</div></a></div></div><div class="article-sort-item"><div class="article-sort-img"><a class="article-sort-item__img" href="/2020/03/15/MAC%E4%B8%AD%E7%9A%84SIP%20%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BF%9D%E6%8A%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD%EF%BC%9F/"><img src="https://cdn.sspai.com/editor/u_753016/_image/2019-06-03/%E5%B0%81%E9%9D%A2.png?imageMogr2/quality/95/thumbnail/!1330x730.6133333333333r/gravity/Center/crop/1330x730.6133333333333/interlace/1" alt="MAC中的SIP 系统完整性保护是什么？如何关闭？"></a></div><div class="article-sort-post"><a class="article-sort-item__post" href="/2020/03/15/MAC%E4%B8%AD%E7%9A%84SIP%20%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BF%9D%E6%8A%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD%EF%BC%9F/"><i class="fa fa-clock-o" aria-hidden="true"></i><time class="article-sort-item__time">2020-03-15</time><div class="article-sort-item__title">MAC中的SIP 系统完整性保护是什么？如何关闭？</div></a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">感謝訪問本站，若喜歡請收藏 ^_^</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/2020/03/17/MAC%E5%86%99%E4%BD%9C%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Ulysses%E7%A0%B4%E8%A7%A3%E7%89%88%E5%88%86%E4%BA%AB/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://okds.net/images/2020/03/17/5d05d1a94edaea19b350e3090d923560.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="MAC写作神器——Ulysses破解版分享" alt="MAC写作神器——Ulysses破解版分享"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/17/MAC%E5%86%99%E4%BD%9C%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Ulysses%E7%A0%B4%E8%A7%A3%E7%89%88%E5%88%86%E4%BA%AB/" title="MAC写作神器——Ulysses破解版分享">MAC写作神器——Ulysses破解版分享</div><time class="aside-post_meta post-meta__date">2020-03-17</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/17/MAC%22xxx.app%E5%B7%B2%E6%8D%9F%E5%9D%8F%22%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://okds.net/images/2020/03/17/100c6566549fbc06ae2a86c82a1d9571.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="MAC&quot;xxx.app已损坏&quot;如何解决？" alt="MAC&quot;xxx.app已损坏&quot;如何解决？"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/17/MAC%22xxx.app%E5%B7%B2%E6%8D%9F%E5%9D%8F%22%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F/" title="MAC&quot;xxx.app已损坏&quot;如何解决？">MAC&quot;xxx.app已损坏&quot;如何解决？</div><time class="aside-post_meta post-meta__date">2020-03-17</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/15/MAC%E4%B8%AD%E7%9A%84SIP%20%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BF%9D%E6%8A%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD%EF%BC%9F/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.sspai.com/editor/u_753016/_image/2019-06-03/%E5%B0%81%E9%9D%A2.png?imageMogr2/quality/95/thumbnail/!1330x730.6133333333333r/gravity/Center/crop/1330x730.6133333333333/interlace/1" onerror="this.onerror=null;this.src='/img/404.jpg'" title="MAC中的SIP 系统完整性保护是什么？如何关闭？" alt="MAC中的SIP 系统完整性保护是什么？如何关闭？"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/15/MAC%E4%B8%AD%E7%9A%84SIP%20%E7%B3%BB%E7%BB%9F%E5%AE%8C%E6%95%B4%E6%80%A7%E4%BF%9D%E6%8A%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD%EF%BC%9F/" title="MAC中的SIP 系统完整性保护是什么？如何关闭？">MAC中的SIP 系统完整性保护是什么？如何关闭？</div><time class="aside-post_meta post-meta__date">2020-03-15</time></div></a></div><div class="aside-recent-post"><a href="/2020/02/26/%E5%A2%A8%E7%9B%92%E2%80%94%E2%80%94%E5%8F%91%E7%8E%B0%E4%B9%90%E8%B6%A3/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://okds.net/images/2020/02/26/adb0ae936509b7c2d6ec73154292d841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="墨盒——发现乐趣" alt="墨盒——发现乐趣"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/02/26/%E5%A2%A8%E7%9B%92%E2%80%94%E2%80%94%E5%8F%91%E7%8E%B0%E4%B9%90%E8%B6%A3/" title="墨盒——发现乐趣">墨盒——发现乐趣</div><time class="aside-post_meta post-meta__date">2020-02-26</time></div></a></div><div class="aside-recent-post"><a href="/2020/02/25/%E9%80%86%E6%97%85%E5%85%89/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://okds.net/images/2020/03/02/fbff9bc49e261c35b9e2dc15d3cfe7de.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="逆旅光" alt="逆旅光"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/02/25/%E9%80%86%E6%97%85%E5%85%89/" title="逆旅光">逆旅光</div><time class="aside-post_meta post-meta__date">2020-02-25</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/MAC/" style="font-size: 24px; color: #99a9bf">MAC</a> <a href="/tags/top/" style="font-size: 16px; color: #999">top</a> <a href="/tags/%E5%B9%B2%E8%B4%A7/" style="font-size: 20px; color: #99a1ac">干货</a> <a href="/tags/%E5%BA%94%E7%94%A8/" style="font-size: 16px; color: #999">应用</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 20px; color: #99a1ac">教程</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>归档</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/"><span class="archive-list-date">2020年03月</span><span class="archive-list-count">3</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/"><span class="archive-list-date">2020年02月</span><span class="archive-list-count">2</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fa fa-line-chart" aria-hidden="true"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">5</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="2/24/2020 00:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(http://okds.net/images/2020/03/02/64b1d9dc07575a78c0aca8bff79e03f0.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By 孤独的时间领主</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
