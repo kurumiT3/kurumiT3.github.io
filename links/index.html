@@ -157,7 +157,7 @@
       <a href="https://hexo.fluid-dev.com/docs/" class="card-body" target="_blank" rel="noopener">
         <div class="row">
           
-            <img class="link-avatar my-auto" src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Docs" />
+            <img class="link-avatar my-auto" src="/img/favicon.png" alt="Fluid Docs" />
           
           <div class="link-text">
             <div class="link-title">Fluid Docs</div>
@@ -173,7 +173,7 @@
       <a href="https://github.com/fluid-dev/hexo-theme-fluid" class="card-body" target="_blank" rel="noopener">
         <div class="row">
           
-            <img class="link-avatar my-auto" src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Repo" />
+            <img class="link-avatar my-auto" src="/img/favicon.png" alt="Fluid Repo" />
           
           <div class="link-text">
             <div class="link-title">Fluid Repo</div>
@@ -189,7 +189,7 @@
       <a href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md" class="card-body" target="_blank" rel="noopener">
         <div class="row">
           
-            <img class="link-avatar my-auto" src="/img/favicon.png" srcset="/img/loading.gif" alt="Fluid Changelog" />
+            <img class="link-avatar my-auto" src="/img/favicon.png" alt="Fluid Changelog" />
           
           <div class="link-text">
             <div class="link-title">Fluid Changelog</div>
@@ -240,28 +240,6 @@
   
 
   
-    <!-- APlayer 音乐播放器 -->
-    <div id="aplayer"></div>
-    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
-<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
-<script type="text/javascript">
-  var oldLoad = window.onload;
-  window.onload = function () {
-    new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      autoplay: 'false' === 'true',
-      loop: 'all',
-      order: 'random',
-      theme: '#b7daff',
-      preload: 'none',
-      audio: "https://music.163.com/playlist?id=6375231&userid=1767196322# 歌曲列表，必须传入下列各参数，其中 url 与 cover 在本地需存于 source 目录，更多参数见文档：https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0"
-    });
-    oldLoad && oldLoad();
-  }
-</script>
-
-  
 
   
 
@@ -287,8 +265,6 @@
 <script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
-
-  <script  src="/js/lazyload.js" ></script>
 
 
 
@@ -416,26 +392,6 @@
   
 
 
-
-  <script>(function (i, s, o, g, r, a, m) {
-      i['DaoVoiceObject'] = r;
-      i[r] = i[r] ||
-        function () {
-          (i[r].q = i[r].q || []).push(arguments);
-        };
-      i[r].l = 1 * new Date();
-      a = s.createElement(o);
-      m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      a.charset = 'utf-8';
-      m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', ('https:' === document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4a74cc34.js", 'daovoice');
-    daovoice('init', {
-      app_id: "4a74cc34",
-    });
-    daovoice('update');
-  </script>
 
 
 
