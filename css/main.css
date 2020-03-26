@@ -10,10 +10,10 @@ body {
   color: #3c4858;
 }
 body a {
-  color: #8cd790;
+  color: #3c4858;
 }
 body a:hover {
-  color: #fe4365;
+  color: 8cd790;
 }
 .hover-with-bg {
   display: inline-block;
@@ -328,7 +328,7 @@ a.police-beian img {
   transition: all 0.2s ease-in-out;
 }
 .sidebar-button:hover {
-  color: #fe4365;
+  color: 8cd790;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -740,12 +740,12 @@ h6::before {
   font-size: 15px;
 }
 .tocbot-link {
-  color: #8cd790;
+  color: #3c4858;
   text-shadow: 0.1em 0.1em 0.2em #ffffff;
 }
 .tocbot-active-link {
   font-weight: 600;
-  color: #fe4365;
+  color: #8cd790;
   text-shadow: 0.1em 0.1em 0.2em #ffbcbc;
 }
 .tocbot-is-collapsible {
@@ -815,5 +815,5 @@ h6::before {
   font-weight: 350;
 }
 .tagcloud a:hover {
-  color: #fe4365 !important;
+  color: 8cd790 !important;
 }
