@@ -10,7 +10,7 @@ body {
   color: #3c4858;
 }
 body a {
-  color: #3c4858;
+  color: #8cd790;
 }
 body a:hover {
   color: #fe4365;
@@ -487,7 +487,7 @@ footer .iconfont {
   transition: all 0.2s ease-in-out;
 }
 ::-webkit-scrollbar {
-  background-color: #fec9c9;
+  background-color: #d4dfe6;
   width: 10px;
   height: 10px;
   background-clip: padding-box;
@@ -496,12 +496,12 @@ footer .iconfont {
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #fe4365;
+  background-color: #6aafe6;
   border-radius: 5px;
   background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
 }
 ::-webkit-scrollbar-corner {
-  background-color: #fe4365;
+  background-color: #6aafe6;
 }
 @-moz-keyframes scroll-down {
   0% {
@@ -740,7 +740,7 @@ h6::before {
   font-size: 15px;
 }
 .tocbot-link {
-  color: #3c4858;
+  color: #8cd790;
   text-shadow: 0.1em 0.1em 0.2em #ffffff;
 }
 .tocbot-active-link {
