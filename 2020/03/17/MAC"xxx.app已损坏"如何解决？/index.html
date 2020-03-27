@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
 
 
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
 <link rel="stylesheet" href="/css/main.css"  >
 <script src="/lib/jquery/jquery.min.js" ></script>
   <style type="text/css">
@@ -509,6 +511,20 @@
     }
   </script>
 
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script type="text/javascript">
+  /* Fancybox */
+  var setupFancybox = function () {
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(function() {
+    var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      $(this).wrap(element);
+    });
+  };
+  setupFancybox();
+  </script>
 
 
 
