@@ -31,8 +31,6 @@
   <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
 
 
-  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
-
 <link rel="stylesheet" href="/css/main.css"  >
 <script src="/lib/jquery/jquery.min.js" ></script>
   <style type="text/css">
@@ -414,23 +412,6 @@
 
 
 
-
-  <!-- 首页文章列表随机图片 -->
-  <script type="text/javascript">
-    $("img.image_random").each(function(){
-      
-        var xjhUrl = "//img.xjh.me/random_img.php?return=json";
-      
-      var _this = $(this);
-      $.get(xjhUrl,function(data,status){
-        if(status === "success"){
-          if(data.result === 200){
-            _this[0].src = data.img;
-          }
-        }
-      });
-    });
-  </script>
 
 
 
