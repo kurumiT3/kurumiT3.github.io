@@ -740,13 +740,13 @@ h6::before {
   font-size: 15px;
 }
 .tocbot-link {
-  color: #6aafe6;
+  color: #3c4858;
   text-shadow: 0.1em 0.1em 0.2em #ffffff;
 }
 .tocbot-active-link {
   font-weight: 600;
-  color: #8cd790;
-  text-shadow: 0.1em 0.1em 0.2em #ffbcbc;
+  color: #55b1d9;
+  text-shadow: 0.1em 0.1em 0.2em #4f4d4d;
 }
 .tocbot-is-collapsible {
   max-height: 1000px;
