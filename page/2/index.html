@@ -19,7 +19,7 @@
   
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <title>归档 ~ 梦余</title>
+  <title>梦余</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
 <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
@@ -38,7 +38,7 @@
   <style type="text/css">
     .banner-bg {
       
-        background-image: url('/img/default.png');
+        background-image: url('https://cdn.jsdelivr.net/gh/kurumiT3/pic@master/uPic/default.png');
       
       background-position: center;
       background-repeat: repeat-y;
@@ -50,7 +50,7 @@
 </head>
 
 <body class="banner-bg">
-  <header style="height: 80vh;">
+  <header style="height: 100vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -145,6 +145,10 @@
             
           </div>
           
+            <div class="scroll-down-bar">
+              <i class="fa fa-angle-down scroll-down-arrow"></i>
+            </div>
+          
         </div>
       </div>
     </div>
@@ -159,26 +163,57 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 11 篇文章</p>
-  <hr>
-  
+  <div class="row mb-4 mx-auto">
     
-      
-      <p class="h5">2020</p>
     
-    <a href="/2020/02/26/%E5%A2%A8%E7%9B%92%E2%80%94%E2%80%94%E5%8F%91%E7%8E%B0%E4%B9%90%E8%B6%A3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">墨盒——发现乐趣</span>
-      <span style="float: right;">02-26</span>
-    </a>
-  
+      <div class="col-12 col-md-12 m-auto">
     
-    <a href="/2020/02/25/%E9%80%86%E6%97%85%E5%85%89/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">逆旅光</span>
-      <span style="float: right;">02-25</span>
-    </a>
-  
+      <a href="/2020/02/25/%E9%80%86%E6%97%85%E5%85%89/" target="_self">
+        <p class="h4 index-header">逆旅光</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">万丈光芒也不如一束逆旅光更耀眼。
 </div>
+        </div>
+      </a>
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-25&nbsp;&nbsp;
+        
+        
+        <i class="far fa-chart-bar"></i>&nbsp;15字&nbsp;&nbsp;
+        <i class="far fa-clock"></i>&nbsp;1分钟&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%AF%97%E6%96%87">诗文</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
+          
+            <a href="/tags/top">top</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+
+  <nav aria-label="index posts navigation Page">
+    <span class="pagination pg-blue justify-content-center mt-5">
+      <a class="extend prev" rel="prev" href="/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
+  
+    <script type="text/javascript">$(".pagination a").each(function(){$(this)[0].href+="#board";})</script>
+  
 
 
               </div>
@@ -379,7 +414,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "幻想末端，流梦之始&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -572,6 +607,12 @@
 </script>
  
 
+  
+    <script type="text/javascript">
+      /* 页面 banner 覆盖全屏 */
+      $(".scroll-down-bar .scroll-down-arrow").css({"margin-top":"3rem"});
+      $("#board").css({"margin-top":"0"});
+    </script>
   
 </body>
 </html>
