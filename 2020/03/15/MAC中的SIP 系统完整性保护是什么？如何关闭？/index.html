@@ -15,7 +15,7 @@
     <meta name="description" content="幻想末端，流梦之始">
   
   
-    <meta name="keywords" content="教程,MAC," />
+    <meta name="keywords" content="MAC,教程," />
   
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -103,7 +103,7 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+            <a class="nav-link" href="/tags/%E9%9A%8F%E7%AC%94/">writing</a>
           </li>
         
           
@@ -208,9 +208,9 @@
               <span>
                 <i class="iconfont icon-tag"></i>
                 
-                  <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B">教程</a>
-                
                   <a class="hover-with-bg" href="/tags/MAC">MAC</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B">教程</a>
                 
               </span>
             </div>
@@ -567,19 +567,27 @@
     $("#hitokoto").stop().fadeOut(function() {
       $("#hitokoto").html(e.hitokoto);
       var element = document.getElementById('hitokotoa');
-      element.href = "https://hitokoto.cn?id=" + e.id;
+      element.href = "https://hitokoto.cn/?uuid=" + e.uuid;
       $("#hitokoto").stop().fadeIn()
     })
   };
   function getHitokoto() {
-    var e = ["a", "b", "c", "d"],
-    t = document.createElement("script");
-    t.type = "text/javascript";
-    t.id = "hitokotoko_js";
-    t.src = "//v1.hitokoto.cn/?encode=json&callback=hitokoto&charset=utf-8&cat=" + e[Math.floor(Math.random() * e.length)];
-    $("#hitokoto").append(t);
+    var e = ["a", "b", "c", "d", "e", "i"];
+    fetch('https://v1.hitokoto.cn/?encode=json&charset=utf-8&c=' + e[Math.floor(Math.random() * e.length)],{
+      cache: 'no-cache',
+      method: 'GET',
+      mode: 'cors'
+    }).then(
+      response => response.json()
+    ).then(
+      data => {
+        hitokoto(data)
+        setTimeout(getHitokoto, 1e4)
+      }
+    ).catch(
+      console.error
+    )
   };
-  setInterval(getHitokoto, 1e4);
   </script>
 
 
