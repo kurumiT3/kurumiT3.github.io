@@ -278,6 +278,22 @@
         </article>
         <br>
         
+            <div class="post__comment content-card">
+                
+    <h4 style="margin-top: 0;">评论</h4>
+    
+    
+        <div id="valine_container" class="valine_thread"></div>
+    
+    
+    
+    
+    
+    
+
+
+            </div>
+        
     </div>
 
 
@@ -351,6 +367,51 @@
 
 
 
+
+    
+    
+    
+        
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+
+        <script>
+            var valine_meta = ['nick', 'mail', 'link'],
+                guest_info = 'nick,mail,link'.split(',').filter((item) => {
+                    return valine_meta.indexOf(item) > -1
+                }),
+                guest_required = 'nick,mail'.split(',').filter((item) => {
+                    return valine_meta.indexOf(item) > -1
+                });
+            
+            new Valine({
+                el: '#valine_container',
+                appId: "5KShmbPHuEvzSR2mnmUMLCMA-gzGzoHsz",
+                appKey: "6mM4Hq48Ld3GYzTo9DxQGRIk",
+                placeholder: "Comment...",
+                meta: guest_info,
+                requiredFields: guest_required,
+                path: "2020/03/30/望穿/",
+                pageSize: 10,
+                avatar: "",
+                lang: "zh-CN",
+                highlight: false,
+                recordIP: false,
+                enableQQ: true,
+                
+                 
+            });
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
 
 
 
