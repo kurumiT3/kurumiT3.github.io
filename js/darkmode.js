@@ -28,7 +28,7 @@
         const res = getComputedStyle(rootElement).getPropertyValue(
             darkModeMediaQueryKey
         );
-        if (res.length) return res.replace(/\"/g, "").trim();
+        if (res.length) return res.replace(/["'\s]/g, '');
         return res === "dark" ? "dark" : "light";
     };
 
@@ -81,5 +81,16 @@
         darkModeToggleBottonElement.addEventListener("click", () => {
             applyCustomDarkModeSettings(toggleCustomDarkMode());
         });
+        if (document.getElementById("hljs-dark-theme")) {
+            darkModeToggleBottonElement.addEventListener("click", () => {
+                if (getModeFromCSSMediaQuery() === 'dark') {
+                    document.getElementById("hljs-default-theme").media = 'none';
+                    document.getElementById("hljs-dark-theme").media = 'all';
+                } else {
+                    document.getElementById("hljs-dark-theme").media = 'none';
+                    document.getElementById("hljs-default-theme").media = 'all';
+                }
+            });
+        }
     }
 })();
