@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Gallifrey</title>
+  <title>Gallifrey&#39;s Blog</title>
   <icon>https://www.gravatar.com/avatar/5e8a50740bec7192a9633f1b33c6e639</icon>
   <subtitle>个人博客</subtitle>
   <link href="/atom.xml" rel="self"/>
