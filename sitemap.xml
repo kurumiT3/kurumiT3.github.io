@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kurumit3.top/add/index.html</loc>
+    
+    <lastmod>2020-10-04T00:32:11.879Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kurumit3.top/about/index.html</loc>
+    
+    <lastmod>2020-10-04T00:30:06.524Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kurumit3.top/search/index.html</loc>
     
     <lastmod>2020-10-03T05:05:45.995Z</lastmod>
@@ -79,23 +93,9 @@
   </url>
   
   <url>
-    <loc>https://kurumit3.top/2020/03/17/Ulysses/</loc>
-    
-    <lastmod>2020-09-13T07:09:02.458Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kurumit3.top/artitalk/index.html</loc>
     
     <lastmod>2020-09-12T03:26:15.969Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/add/index.html</loc>
-    
-    <lastmod>2020-09-05T11:22:27.727Z</lastmod>
     
   </url>
   
@@ -117,13 +117,6 @@
     <loc>https://kurumit3.top/2020/08/27/%E4%BD%8E%E8%BF%90%E5%AD%98%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97/</loc>
     
     <lastmod>2020-09-05T07:55:42.018Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/about/index.html</loc>
-    
-    <lastmod>2020-08-31T09:58:44.396Z</lastmod>
     
   </url>
   
@@ -205,13 +198,6 @@
   </url>
   
   <url>
-    <loc>https://kurumit3.top/2020/02/26/inkbox/</loc>
-    
-    <lastmod>2020-05-30T09:07:49.086Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kurumit3.top/2020/05/28/%E4%B8%83%E5%B9%B4%E4%B9%8B%E7%97%92/</loc>
     
     <lastmod>2020-05-28T14:29:36.686Z</lastmod>
@@ -243,13 +229,6 @@
     <loc>https://kurumit3.top/2020/04/16/%E6%BC%94%E5%91%98/</loc>
     
     <lastmod>2020-04-16T07:56:31.146Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/2020/04/09/feedback-for-inkbox/</loc>
-    
-    <lastmod>2020-04-16T07:32:01.411Z</lastmod>
     
   </url>
   
@@ -310,20 +289,6 @@
   </url>
   
   <url>
-    <loc>https://kurumit3.top/more/catch/README.html</loc>
-    
-    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/more/catch/index.html</loc>
-    
-    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kurumit3.top/more/catch/package.json</loc>
     
     <lastmod>2019-02-26T16:56:24.000Z</lastmod>
@@ -331,7 +296,21 @@
   </url>
   
   <url>
+    <loc>https://kurumit3.top/more/catch/README.html</loc>
+    
+    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kurumit3.top/more/catch/tsconfig.json</loc>
+    
+    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kurumit3.top/more/catch/index.html</loc>
     
     <lastmod>2019-02-26T16:56:24.000Z</lastmod>
     
