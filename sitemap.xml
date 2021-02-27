@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kurumit3.top/2020/08/06/blog-history/</loc>
+    
+    <lastmod>2021-02-27T06:39:49.023Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kurumit3.top/2021/02/08/2020-2021/</loc>
     
     <lastmod>2021-02-10T09:42:59.925Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://kurumit3.top/2020/11/14/wander/</loc>
     
     <lastmod>2020-12-26T13:02:56.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/2020/08/06/blog-history/</loc>
-    
-    <lastmod>2020-12-20T04:38:21.134Z</lastmod>
     
   </url>
   
@@ -324,14 +324,7 @@
   </url>
   
   <url>
-    <loc>https://kurumit3.top/more/catch/README.html</loc>
-    
-    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kurumit3.top/more/catch/index.html</loc>
+    <loc>https://kurumit3.top/more/catch/package.json</loc>
     
     <lastmod>2019-02-26T16:56:24.000Z</lastmod>
     
@@ -345,7 +338,14 @@
   </url>
   
   <url>
-    <loc>https://kurumit3.top/more/catch/package.json</loc>
+    <loc>https://kurumit3.top/more/catch/README.html</loc>
+    
+    <lastmod>2019-02-26T16:56:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kurumit3.top/more/catch/index.html</loc>
     
     <lastmod>2019-02-26T16:56:24.000Z</lastmod>
     
